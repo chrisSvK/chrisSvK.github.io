@@ -1,30 +1,49 @@
 <!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			{% include analytics.html %}
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:christian.scipa@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/chrisSvK">github.com/chrisSvK</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main2.css">
+    {% include analytics.html %}
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="">Home /</a></li>
+        <li><a href="">O mne /</a></li>
+        <li><a href="">Portfólio /</a></li>
+        <li><a href="">Filmy-seriály /</a></li>
+        <li><a href="">Hudba-knihy /</a></li>
+        <li><a href="">Webove publikovanie</a></li>
+    </ul>
+</nav>
+<header>
+    <div id="logo">
+        <img src="/img/panorama.jpg" alt="panorama" height="300">
+        <img id="logo-img" src="/img/logo.png" alt="logo" height="200">
+    </div>
+</header>
+<main>
+    <div id="content">
+        {{ content }}
+    </div>
+</main>
+<footer>
+    <div id="footerStred">
+        <p style="color: white; font-weight: bold;">© 2019</p>
+        <ul>
+            <li><a href="https://www.github.com/chrisSvK"><img alt="github" src="/img/github.png" height="35"></a></li>
+            <li><a href="mailto:christian.scipa@gmail.com"><img alt="gmail" src="/img/gmail.png" height="35"></a></li>
+            <li><a href="https://www.instagram.com/chris_svk/"><img alt="instagram" src="/img/insta.png" height="35"></a>
+            </li>
+            <li><a href="https://www.youtube.com/user/christianscipa06/"><img alt="youtube" src="/img/youtube.png"
+                                                                              height="35"></a></li>
+            <li><a href="https://twitter.com/ChristianScipa"><img alt="twitter" src="/img/twitter.png" height="35"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
