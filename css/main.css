@@ -1,44 +1,103 @@
+
 body {
-    margin: 60px auto;
-    width: 70%;
-    background-color: cornflowerblue;
+    margin: 0;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
+
+h1 {
+    font-family: Arial, serif;
+}
+
+p {
+    font-family: Arial, serif;
+}
+
+a {
+    font-family: Arial, serif;
     font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
+
 a:hover {
-    text-decoration: underline;
+    color: #feda6a;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+
+nav {
+    background-color: #393f4d;
+    padding: 15px 5px 15px 5px;
+    overflow: hidden;
+    margin: 0 auto;
 }
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+
+nav ul {
+    margin: 0 auto;
+    width: max-content;
 }
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+header {
+    background-color: white;
+    overflow: hidden;
+}
+
+header #logo {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header #logo img {
+    display: block;
+}
+
+header #logo #logo-img {
+    position: absolute;
+    top: 15%;
+    left: 45%
+}
+
+main {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    min-height: 400px;
+    /*align-items: center;*/
+}
+
+main #content {
+    background-color: white;
+    margin: 0 auto;
+    width: 65%;
+}
+
+
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    background-color: #393f4d;
+    overflow: hidden;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+footer #footerStred {
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
 }
 
-ul.posts li {
-    list-style: none;
+
+footer #footerStred ul {
+    margin: 0 auto;
+    width: max-content;
+    padding: 0;
+}
+
+footer #footerStred li {
+    display: inline-block;
+    padding: 5px;
 }
