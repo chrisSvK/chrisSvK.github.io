@@ -76,6 +76,26 @@ main #content {
     background-color: white;
     margin: 0 auto;
     width: 65%;
+
+}
+
+main #about-content {
+    background-color: white;
+    margin: 50px auto;
+    width: 65%;
+    display: flex;
+}
+
+main #about-content #about-left {
+    width: 50%;
+}
+
+main #about-content #about-right {
+    width: 50%;
+}
+
+main #about-content #about-right img {
+    margin: 20px 0 0 35%;
 }
 
 

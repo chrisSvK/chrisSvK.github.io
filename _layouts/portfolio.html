@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<main>
+    <div id="content">
+        {{ content }}
+        <hr>
+        {% for portfolio in site.portfolio_collection %}
+            <h2>{{ portfolio.headline }}</h2>
+            <p>{{portfolio.content | markdownify}}</p>
+            {% for screenshot in portfolio.pictures %}
+                {{screenshot}}
+            {% endfor %}
+            <hr>
+        {% endfor %}
+    </div>
+</main>
