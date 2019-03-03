@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<main>
+    <div id="content">
+        <h1>Hudba</h1>
+        {{ page.hudba-desc }}
+        <br>
+        <h2>Youtube & spotify playlist</h2>
+        <iframe width="350" height="200"
+                src="https://www.youtube.com/embed/videoseries?list=PLsteBpLjAf6srgDhLVlsliDkYoTQEvkHx" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <br>
+        <iframe src="https://open.spotify.com/embed/user/11158122307/playlist/5IFbgB3JlUm1ysKqqD5iRj" width="300"
+                height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        {{page.youtube}}
+        {{page.spotify}}
+        <br>
+        <hr>
+        <h1>Knihy</h1>
+        {{page.knihy-desc}}
+        <br>
+        <br>
+        <h2>Top 5 kníh</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>Nazov</th>
+                <th>Autor</th>
+            </tr>
+            {% for kniha in page.knihy %}
+            <tr>
+                <td>{{kniha.img}}</td>
+                <td>{{kniha.nazov}}</td>
+                <td>{{kniha.hodnotenie}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</main>
