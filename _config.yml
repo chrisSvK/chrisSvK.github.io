@@ -1,6 +1,5 @@
 name: Christian Ščípa
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
 collections_dir: my_collections
 collections:
   - portfolio_collection

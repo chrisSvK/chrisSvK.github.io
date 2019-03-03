@@ -4,14 +4,15 @@ layout: default
 <main>
     <div id="content">
         {{ content }}
-        <hr>
         {% for portfolio in site.portfolio_collection %}
-            <h2>{{ portfolio.headline }}</h2>
+        <div id="porfolio-content">
+            <h3>{{ portfolio.headline }}</h3>
             <p>{{portfolio.content | markdownify}}</p>
             {% for screenshot in portfolio.pictures %}
-                {{screenshot}}
+            <img src={{screenshot}} alt="image" height="50">
             {% endfor %}
             <hr>
+        </div>
         {% endfor %}
     </div>
 </main>

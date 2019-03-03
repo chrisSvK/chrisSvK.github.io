@@ -1,7 +1,7 @@
 ---
 headline: Bakalarsky projekt
 pictures:
-  - one
+  - /img/portfolio/cofeee.jpg
 ---
 
 Toto bol projekt na predmet webove technologie. Pouzity php a ine veci. sdaddsadsa

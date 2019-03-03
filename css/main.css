@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: Arial, serif;
 }
 
@@ -74,9 +74,8 @@ main {
 
 main #content {
     background-color: white;
-    margin: 0 auto;
     width: 65%;
-
+    margin: 50px auto 50px;
 }
 
 main #about-content {
@@ -84,6 +83,7 @@ main #about-content {
     margin: 50px auto;
     width: 65%;
     display: flex;
+    height: 500px;
 }
 
 main #about-content #about-left {
@@ -98,10 +98,32 @@ main #about-content #about-right img {
     margin: 20px 0 0 35%;
 }
 
+main #porfolio-content{
+    padding: 20px 0 0 0;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
 
 footer {
     background-color: #393f4d;
     overflow: hidden;
+    bottom:0;
+    width: 100%;
 }
 
 footer #footerStred {

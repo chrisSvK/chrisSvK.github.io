@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<main>
+    <div id="content">
+        {{ content }}
+        <h1>Filmy</h1>
+        <br>
+        <h2>Aktuálny film</h2>
+        {{page.movies.first}}
+        <br>
+        <h2>Top 5 filmov</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>Nazov</th>
+                <th>IMDbh</th>
+            </tr>
+            {% for film in page.movies %}
+            <tr>
+                <td>{{film.img}}</td>
+                <td>{{film.nazov}}</td>
+                <td>{{film.hodnotenie}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <hr>
+        <h1>Seriály</h1>
+        <br>
+        <h2>Aktuálny seriál</h2>
+        {{page.shows.first}}
+        <br>
+        <h2>Top 5 seriálov</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>Nazov</th>
+                <th>IMDbh</th>
+            </tr>
+            {% for show in page.shows %}
+            <tr>
+                <td>{{show.img}}</td>
+                <td>{{show.nazov}}</td>
+                <td>{{show.hodnotenie}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</main>
