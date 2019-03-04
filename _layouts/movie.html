@@ -6,20 +6,28 @@ layout: default
         <h1>Filmy</h1>
         {{ content }}
         <br>
-        <h2>Aktuálny film</h2>
-        {{page.movies.first}}
+        <div class="aktualnyFilm">
+            <h2>Aktuálny film</h2>
+            <h3><a href={{page.new-film.first.link}} target="_blank">{{page.new-film.first.nazov}}</a></h3>
+            <img class="poster" src={{page.new-film.first.img}} alt="movie" height="300" width="230">
+            <div class="popis">{{page.new-film.first.popis}}</div>
+            <div class="hodnotenie">Hodnotenie IMDb {{page.new-film.first.hodnotenie}}</div>
+            <br>
+            {{page.new-film.first.trailer}}
+        </div>
+        <br>
         <br>
         <h2>Top 5 filmov</h2>
         <table>
             <tr>
                 <th></th>
                 <th>Nazov</th>
-                <th>IMDbh</th>
+                <th>IMDb hodnotenie</th>
             </tr>
             {% for film in page.movies %}
             <tr>
-                <td>{{film.img}}</td>
-                <td>{{film.nazov}}</td>
+                <td><img src={{film.img}} alt="movie" height="100" width="75"></td>
+                <td><a href={{film.link}} target="_blank">{{film.nazov}}</a></td>
                 <td>{{film.hodnotenie}}</td>
             </tr>
             {% endfor %}
@@ -27,20 +35,28 @@ layout: default
         <hr>
         <h1>Seriály</h1>
         <br>
-        <h2>Aktuálny seriál</h2>
-        {{page.shows.first}}
+        <div class="aktualnyFilm">
+            <h2>Aktuálny serial</h2>
+            <h3><a href={{page.new-show.first.link}} target="_blank">{{page.new-show.first.nazov}}</a></h3>
+            <img class="poster" src={{page.new-show.first.img}} alt="show" height="300" width="230">
+            <div class="popis">{{page.new-show.first.popis}}</div>
+            <div class="hodnotenie">Hodnotenie IMDb {{page.new-show.first.hodnotenie}}</div>
+            <br>
+            {{page.new-show.first.trailer}}
+        </div>
+        <br>
         <br>
         <h2>Top 5 seriálov</h2>
         <table>
             <tr>
                 <th></th>
                 <th>Nazov</th>
-                <th>IMDbh</th>
+                <th>IMDb</th>
             </tr>
             {% for show in page.shows %}
             <tr>
-                <td>{{show.img}}</td>
-                <td>{{show.nazov}}</td>
+                <td><img src={{show.img}} alt="show" height="100" width="75"></td>
+                <td><a href={{show.link}} target="_blank">{{show.nazov}}</a></td>
                 <td>{{show.hodnotenie}}</td>
             </tr>
             {% endfor %}

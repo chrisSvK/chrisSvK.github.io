@@ -78,6 +78,21 @@ main #content {
     margin: 50px auto 50px;
 }
 
+main #content .aktualnyFilm .poster{
+    float: left;
+    margin-right: 20px;
+}
+
+
+main #content .aktualnyFilm .popis{
+    font-family: Arial, serif;
+}
+
+main #content .aktualnyFilm .hodnotenie{
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+
 main #about-content {
     background-color: white;
     margin: 50px auto;
