@@ -9,7 +9,7 @@ layout: default
             <h3>{{ portfolio.headline }}</h3>
             <p>{{portfolio.content | markdownify}}</p>
             {% for screenshot in portfolio.pictures %}
-            <img src={{screenshot}} alt="image" height="50">
+            <img src={{screenshot}} alt="image" height="200">
             {% endfor %}
             <hr>
         </div>

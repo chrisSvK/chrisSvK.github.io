@@ -8,23 +8,21 @@ layout: default
         {{ page.hudba-desc }}
         <br>
         <h2>Youtube & spotify playlist</h2>
-        <iframe width="350" height="200"
-                src="https://www.youtube.com/embed/videoseries?list=PLsteBpLjAf6srgDhLVlsliDkYoTQEvkHx" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
         <br>
-        <iframe src="https://open.spotify.com/embed/user/11158122307/playlist/5IFbgB3JlUm1ysKqqD5iRj" width="300"
-                height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
+        <div style="float: left; margin-right: 50px"> {{page.spotify}}</div>
         {{page.youtube}}
-        {{page.spotify}}
         <br>
-        <hr>
-        <h1>Knihy</h1>
-        {{page.knihy-desc}}
+        <hr style="clear: both;">
+        <h1 style="clear: both">Knihy</h1>
+        <div class="aktualnaKniha">
+            <h2>Aktuálna kniha</h2>
+            <h3><a href={{page.new-kniha.first.link}} target="_blank">{{page.new-kniha.first.nazov}}</a></h3>
+            <h4>Autor: {{page.new-kniha.first.autor}}</h4>
+            <img class="poster" src={{page.new-kniha.first.img}} alt="show" height="300" width="230">
+            <div class="popis">{{page.new-kniha.first.popis}}</div>
+        </div>
         <br>
-        <br>
-        <h2>Top 5 kníh</h2>
+        <h2 style="clear: both">Top 5 kníh</h2>
         <table>
             <tr>
                 <th></th>
@@ -33,9 +31,11 @@ layout: default
             </tr>
             {% for kniha in page.knihy %}
             <tr>
-                <td>{{kniha.img}}</td>
-                <td>{{kniha.nazov}}</td>
-                <td>{{kniha.hodnotenie}}</td>
+            <tr>
+                <td><img src={{kniha.img}} alt="kniha" height="100" width="75"></td>
+                <td><a href={{kniha.link}} target="_blank">{{kniha.nazov}}</a></td>
+                <td>{{kniha.autor}}</td>
+            </tr>
             </tr>
             {% endfor %}
         </table>
