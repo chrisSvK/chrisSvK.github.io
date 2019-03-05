@@ -6,5 +6,5 @@ pictures:
   - /img/portfolio/coffee3.jpg
 ---
 
-Toto bol projekt na predmet webove technologie. Pouzitý PHP Laravel na backend a Vue.js + Quasar 
-na administrátorsku časť. Databáza produktov, užívateľov a objednávok v PostgreSQL. 
+Toto bol projekt na predmet webové technológie. Použitý PHP Laravel na backend a Vue.js + Quasar 
+na administrátorskú časť. Databáza produktov, užívateľov a objednávok v PostgreSQL. 
