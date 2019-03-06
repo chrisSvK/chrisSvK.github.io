@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
+    <base target="_blank">
     <!-- link to main stylesheet -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     {% include analytics.html %}
@@ -11,26 +12,16 @@
 <body>
 <nav>
     <ul>
-        <li><a href="/index.html">Home /</a></li>
-        <li><a href="/about/index.html">O mne /</a></li>
-        <li><a href="/portfolio/index.html">Developerský profil /</a></li>
-        <li><a href="/movies/index.html">Filmy-seriály /</a></li>
-        <li><a href="/music/index.html">Hudba-knihy /</a></li>
+        <li><a href="/index.html" target="_self">Home /</a></li>
+        <li><a href="/about/index.html" target="_self">O mne /</a></li>
+        <li><a href="/portfolio/index.html" target="_self">Developerský profil /</a></li>
+        <li><a href="/movies/index.html" target="_self">Filmy-seriály /</a></li>
+        <li><a href="/music/index.html" target="_self">Hudba-knihy /</a></li>
         <li><a href="/">Webove publikovanie</a></li>
     </ul>
     <!--{{ site.time | date_to_string }}-->
 </nav>
-
-<!--<header>
-    <div id="logo">
-        <img src="/img/panorama.jpg" alt="panorama" height="300">
-        <img id="logo-img" src="/img/logo.png" alt="logo" height="200">
-    </div>
-</header>-->
-
 {{ content }}
-
-
 <footer>
     <div id="footerStred">
         <p style="color: white; font-weight: bold;">© 2019</p>

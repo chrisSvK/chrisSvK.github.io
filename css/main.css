@@ -22,6 +22,7 @@ p {
 a {
     font-family: Arial, serif;
     font-weight: bold;
+    color: black;
 }
 
 a:hover {

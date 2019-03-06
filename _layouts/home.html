@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign valuee = site.time | date: "%M" |  modulo: 5 %}
 <header>
     <div id="logo">
         <img src="/img/panorama.jpg" alt="panorama" height="300">
@@ -9,6 +10,11 @@ layout: default
 </header>
 <main>
     <div id="content">
+        <!--{% assign daco = value |times: 1 %}-->
+        {{ site.time }}
+        {{valuee}}
+        {{site.data.panorama.panorama[valuee]}}
+        <!--{{site.data.panorama.panorama[value]}}-->
         {{ content }}
     </div>
 </main>
