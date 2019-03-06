@@ -1,7 +1,10 @@
 ---
 headline: Bakalársky projekt - Podpora navigácie na webe
 pictures:
-  - /img/portfolio/cofeee.jpg
+  - /img/portfolio/bakalarka.jpg
+  - /img/portfolio/bakalarka2.jpg
+  - /img/portfolio/bakalarka3.jpg
+  - /img/portfolio/bakalarka4.jpg
 ---
 
 Môj aktuálny bakalársky projekt písaný v Javascripte. Ide o pridanie vrstvy nad webovou stránkou alebo aplikáciou, ktorá 

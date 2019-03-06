@@ -19,12 +19,11 @@
         <li><a href="/music/index.html" target="_self">Hudba-knihy /</a></li>
         <li><a href="/">Webove publikovanie</a></li>
     </ul>
-    <!--{{ site.time | date_to_string }}-->
 </nav>
 {{ content }}
 <footer>
     <div id="footerStred">
-        <p style="color: white; font-weight: bold;">© 2019</p>
+        <p style="color: white; font-weight: bold;">© {{site.time |date: "%Y"}}</p>
         <ul>
             <li><a href="https://www.github.com/chrisSvK"><img alt="github" src="/img/github.png" height="35"></a></li>
             <li><a href="mailto:christian.scipa@gmail.com"><img alt="gmail" src="/img/gmail.png" height="35"></a></li>
@@ -38,5 +37,6 @@
         </ul>
     </div>
 </footer>
+<script src="/portfolio/AISbetaVerziaCustomer.js"></script>
 </body>
 </html>

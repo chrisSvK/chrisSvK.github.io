@@ -1,0 +1,35 @@
+{
+  "tutorialy": [
+    {
+      "nazov": "Najdi IMDb profil",
+      "kroky": [
+        {
+          "cislo": 1,
+          "popis": "Klikni na logo IMDb",
+          "xpath": "//*[@id=\"content\"]/a/img",
+          "krokovatel": "0",
+          "multipage": "1"
+        }
+      ]
+    },
+    {
+      "nazov": "Prehliadka stránky o mne",
+      "kroky": [
+        {
+          "cislo": 1,
+          "popis": "Info o mne",
+          "xpath": "//*[@id=\"about-left\"]/p",
+          "krokovatel": "1",
+          "multipage": "0"
+        },
+        {
+          "cislo": 2,
+          "popis": "Socialne siete",
+          "xpath": "//*[@id=\"footerStred\"]/ul",
+          "krokovatel": "1",
+          "multipage": "0"
+        }
+      ]
+    }
+  ]
+}
