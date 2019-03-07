@@ -42,17 +42,17 @@ Použité premenné :
     * spotify
     
 Použité tagy:
-* capture
-* assign
-* for loop
-* include
+* capture - pri získaní roku na výpočet veku
+* assign - pri vytváraní nového zoznamu 
+* for loop - iterovanie v zoznamoch
+* include - Google Analytics 
 
 Použité filtre:
-* date: "%Y"
-* minus
+* date: "%Y" - filtrovanie site.time
+* minus - odčítanie roku narodenia od aktuálneho roku
 * markdownify
-* sort
-* reverse
+* sort - zoradenie zoznamu
+* reverse - obratenie zoznamu 
 
 Kolekcie a dátové súbory:
 * my_collections/_portfolio_collection/ 
