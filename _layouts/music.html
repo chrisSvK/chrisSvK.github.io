@@ -15,7 +15,9 @@ layout: default
         <hr style="clear: both;">
         <h1 style="clear: both">Knihy</h1>
         <p>Môj účet na goodreads, kde občas pridávam knihy, ktoré čítam alebo som prečítal. </p>
-        <a href="https://www.goodreads.com/user/show/50321531-christian-pa" target="_blank"><img src="https://s.gr-assets.com/assets/layout/header/goodreads_logo.svg" width="200" height="70" title="GoodReads" alt="GoodReads"></a>
+        <a href="https://www.goodreads.com/user/show/50321531-christian-pa" target="_blank"><img
+                src="https://s.gr-assets.com/assets/layout/header/goodreads_logo.svg" width="200" height="70"
+                title="GoodReads" alt="GoodReads"></a>
         <div class="aktualnaKniha">
             <h2>Aktuálna kniha</h2>
             <h3><a href={{page.new-kniha.first.link}} target="_blank">{{page.new-kniha.first.nazov}}</a></h3>
@@ -32,12 +34,11 @@ layout: default
                 <th>Autor</th>
             </tr>
             {% for kniha in page.knihy %}
-            <tr>
+            <tr></tr>
             <tr>
                 <td><img src={{kniha.img}} alt="kniha" height="100" width="75"></td>
                 <td><a href={{kniha.link}} target="_blank">{{kniha.nazov}}</a></td>
                 <td>{{kniha.autor}}</td>
-            </tr>
             </tr>
             {% endfor %}
         </table>

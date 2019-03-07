@@ -23,7 +23,7 @@ layout: default
                 <th>Nazov</th>
                 <th>IMDb hodnotenie</th>
             </tr>
-            {% assign filmArray =  page.movies | sort: "hodnotenie" | reverse  %}
+            {% assign filmArray = page.movies | sort: "hodnotenie" | reverse %}
             {% for film in filmArray %}
             <tr>
                 <td><img src={{film.img}} alt="movie" height="100" width="75"></td>
@@ -51,7 +51,7 @@ layout: default
                 <th>Nazov</th>
                 <th>IMDb</th>
             </tr>
-            {% assign showArray =  page.shows | sort: "hodnotenie" | reverse  %}
+            {% assign showArray = page.shows | sort: "hodnotenie" | reverse %}
             {% for show in showArray %}
             <tr>
                 <td><img src={{show.img}} alt="show" height="100" width="75"></td>
