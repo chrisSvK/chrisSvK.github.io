@@ -65,6 +65,83 @@ Použité pluginy:
 * jekyll-avatar : odkaz na profilový obrázok účtu na GitHube
 * jemoji : použitie emotikonov 
 
+***
+
+## Zadanie č. 2 - Transformácia vybraného dokumentu do formátu DocBook
+
+Cieľom druhého zadania bolo pretransformovať ľubovolnú prácu v pôvodnom formáte (LaTeX, Word) ,
+do formátu [DocBook](https://docbook.org) a následne vygenerovať finálny .pdf súbor.
+Na prácu sme využili šablónu pre bakalársku prácu od Jiřího Koska. 
+Výsledný dokument má 23 strán z toho obsah práce tvorí cca 13 strán. 
+
+Použité konštrukcie DocBooku: 
+
+Členenie textu: 
+* dve kapitoly `<chapter>` , 2 úrovne podkapitol `<section>`
+* príloha na konci práce `<appendix>` 
+* generovaný obsah
+     
+Zvýraznenie slov:
+* kurzíva `<emphasis>`
+* tučné písmo `<emphasis role="strong">` 
+* inicialy `<acronym>` 
+* premennej kódu programu `<prompt>`
+* časti kódu `<programlisting>`
+* členenie textu odrážkami `<itemizedlist mark="opencircle">`
+* členenie textu číslovaním `<orderedlist>`
+    
+Odkazy:
+* odkazy na iné časti dokumentu, označenie sekcie napr. `<section id="json">` a odkaz na ňu `<link linkend="json">`
+    * použité na sekcie HTML, Json, Xpath 
+*  URL odkazy `<ulink url="https://introjs.com/">`
+    * použité ne weby introjs.com a Hopscotch
+        
+Poznámky pod čiarou:
+* `<footnote>` , poznámka s URL odkamzi na weby introjs.com a Hopscotch pri obrázkoch
+    
+Vloženie obrázku a tabuliek:
+* 7 obrázkov , príklad dole, poprípade doplnený o zmenu rozmeru `contentwidth="781"` v atribúte `<imagedata>`
+ ```xml
+           <figure id="Obr5">
+                      <title>Príklad URL adresy</title>
+                      <mediaobject>
+                          <imageobject>
+                              <imagedata fileref="img/url.JPG"/>
+                          </imageobject>
+                      </mediaobject>
+            </figure>
+```
+* tabuľka
+```xml
+            <table frame="all">
+                <title/>
+                <tgroup>
+                    <colspec colname="c1"/>
+                    <thead>
+                        <row>
+                            <entry align="center"/>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+ ```   
+* odkazy na obrázky a tabuľky cez `<link>` , podobne ako odkazy na časti dokumentu , zoznam obrázkov vygenerovaný na začiatku práce za obsahom
+
+Vytvorenie registra pojmov (indexu)
+
+* Vygenerovanie na konci dokumentu cez `<index>` , v texte označené pojmy cez `<indexterm>` s troma úrovňami `<primary>`
+ `<secondary>` `<tertiary>` ,  16 pojmov 
+ 
+* Zoznam použitej literatúry
+
+ 
+ 
+
 
 
 
