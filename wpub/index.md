@@ -99,7 +99,7 @@ Odkazy:
 Poznámky pod čiarou:
 * `<footnote>` , poznámka s URL odkamzi na weby introjs.com a Hopscotch pri obrázkoch
     
-Vloženie obrázku a tabuliek:
+Vloženie obrázkov a tabuliek:
 * 7 obrázkov , príklad dole, poprípade doplnený o zmenu rozmeru `contentwidth="781"` v atribúte `<imagedata>`
  ```xml
            <figure id="Obr5">
@@ -137,7 +137,24 @@ Vytvorenie registra pojmov (indexu)
 * Vygenerovanie na konci dokumentu cez `<index>` , v texte označené pojmy cez `<indexterm>` s troma úrovňami `<primary>`
  `<secondary>` `<tertiary>` ,  16 pojmov 
  
-* Zoznam použitej literatúry
+Zoznam použitej literatúry
+* Odkaz cet `<xref linkend=""/>` , biliografia sa vygeneruje cez  `<bibliography>` , `<surname>`, `<firstname>`, `<title>`,  `<pubdate>`, `<publishername>`, 
+`<bibliomisc>`
+
+
+Úprava XSLT šablóny:
+
+Generovanie zoznamu obrázkov:
+*   úprava thesis.xsl, pridanie figure
+```xml
+    <xsl:param name="generate.toc">
+        book title,toc,figure
+    </xsl:param>
+```
+
+Úprava nadpisu fakulty na titulnej strane 
+* úpravou thesis-tp-fo.xsl , pridaním do book.titlepage.before.recto, hyphenate="false"
+
 
  
  
