@@ -7,6 +7,10 @@ title: Wpub
 
 Na tejto stránke budú uverejnené zadania a projekty z predmetu Webové publikovanie.
 
+[Zadanie 1](#zadanie-č-1---osobná-webová-prezentácia-na-github-pages) |
+[Zadanie 2](#zadanie-č-2---transformácia-vybraného-dokumentu-do-formátu-docbook) |
+[Zadanie 3](#zadanie-č-3---xml-prezentácia)
+
 *****
 ## Zadanie č. 1 - Osobná webová prezentácia na GitHub pages
 
@@ -155,9 +159,92 @@ Generovanie zoznamu obrázkov:
 Úprava nadpisu fakulty na titulnej strane 
 * úpravou thesis-tp-fo.xsl , pridaním do book.titlepage.before.recto, hyphenate="false"
 
+***
+
+## Zadanie č. 3 - XML prezentácia
+ 
+ Riešením tohto zadanie bolo vytvorenie prezentácie na ľubovolnú tému vo formáte XML. 
+ Následne bolo potrebné navrhnúť XSLT šablóny na konverziu prezentácie do formátu XHTML+CSS a súboru PDF.
+ 
+ Vytvorené cieľové súbory sa transformujú pomocou priložených .bat súborov, ktoré na transformáciu využívajú procesory SAXON a XEP.
+ 
+ <br>
 
  
+ **Typ dokumentu a definovanie prezentácie:**
  
+ Dokument je písaný v jazyku XML a je bližšie definovaný použitím DTD.
+ Základný koreňový element je _slideshow_ ,ktorý predstavuje celú prezentáciu.
+ 
+ Atribútmi prezentácie sú názov témy, autor a farba nadpisov a textov.
+ 
+ Prezentácia môže obsahovať _background-image_,ktorý sa využíva ako obal na úvodný slide. Ďalej je element prezentácie zložený 
+ elementmi _slide_ ,ktoré predstavujú už jednotlivé stránky prezentácie.
+ 
+ Jednotlivé stránky prezentácie obsahujú nadpis _title_ a obsah _container_.
+ 
+ V atribútoch slideu je nastavené ID stránky a farba pozadia. 
+ 
+ _Container_ obsahuje texty v elementoch _odstavec_ , obrázky _image_ alebo odkaz na youtube video v elemetne _video_.
+ 
+ Ďalej môže byť _container_ rozdelený na dve polovice _lava-strana_ a _prava-strana_.
+ 
+ V týchto dvoch častiach sa taktiež objavuje _odstavec_ , _image_ aj _video_ , podobne ako v _containeri_.
+ 
+ _Odstavec_ obsahuje samotný text stránky, čiže hlavný obsah.
+ 
+ _Image_ tvorí relatívnu cestu k obrázku danej stránky
+ 
+ _Video_ je odkaz na Youtube video.  
+ 
+ <br>
+ 
+ 
+ **Transformácia na XHTML:**
+ 
+ XSL transformácia  využíva 9 templates. _Slideshow_, _slide_, _//slide/title_,
+ _//slide/container_ , _//slide/container/lava-strana_ , _//slide/container/prava-strana_
+ , _odstavec_, _image_ a _video_.  
+ 
+ Hlavná stránka sa vygeneruje pomocou **xsl:result-document**  ako _prezentacia.xhtml_, obsahuje nadpis, autora a pozadie z elementu
+ _slideshow_. Taktiež obsahuje tlačidlo s odkazom na prvý slide, ktorý je vygenerovaný v samostatnom
+ xhtml súbore.
+ 
+ Slide využíva template _slide_ ktorý taktiež vďaka **xsl:result-document** vygeneruje 
+ každý slide na základe jeho unikátneho ID do samostantého suboru _file_id.xhtml_.
+ 
+ Každá vygenerovaná stránka má tagy - html, head, title, body. Štýl je definovaným 
+ externým [Bootstrapom](https://getbootstrap.com)  a vlastným _style.css_ súborom kde sú upravené niektoré elementy
+ väčšinou práve tie  vygenerované bootstrapom.
+ 
+ Tag body má nastavenú farbu pozadia podľa atribútu v xml v elemente slide. V body sa nachádza
+ div element _container_, ktorý slúži ako priestor práve pre obsah containeru z XMLka. 
+ Zobrazuje sa tu teda text, obrázky a video. Taktiež je tu pridané stránkovanie (pagination).
+ Na vygenerovanie stránkovania bol použitý **xsl:for-each** spolu s podmienkou
+ **xsl:choose** - **xsl:when** - **xsl:otherwise** alebo **xsl:if** , ktoré zabezpečujú že sa strákovaním 
+ bude možné preklikávať cez existujúce stránky a nevyjde sa z rozsahu. 
+ 
+ Štýly pre jednotlivé html elementy sa pridávajú pomocou **xsl:attribute** a následne poprípade
+ **xsl:value-of** vďaka čomu získame údaje z XML súboru. Týmto je dosiahnutá parametrizácia. 
+ Využíva sa to pri nastavení farby textu , nadpisov, pozadia. 
+ 
+ Template _video_ vytvára Youtube element iframe s linkom na video z XML súboru. 
+ 
+ <br>
+ 
+ 
+ **Transformácia na PDF**
+ 
+ Transformácia využíva dva typy **fo:simple-page-master** , _cover_ prvú hlavnú úvodnú stránku 
+  a _landscape_ pre zvyšné strany. Rozlíšenie je nastavené na 1000x680 px , _cover_ obsahuje 
+  background-image, _landscape_ background-color 
+ 
+ Stránky sa bližšie definujú cez **fo:page-sequence** a **fo:flow** , následne každý element
+ z XML je obalený v **fo:block** , využívajú sa presne tie isté template ako pri generovaní 
+ XHTML. S rozdielom že miesto HTML elementov sa používa práve **fo:block**, ktorému sa 
+ nastavujú špecifické štýly na umiestnenie, veľkosť textu, farbu, zarovnanie apod. 
+ 
+ PDF nepodporuje iframe preto sú videá umiestené v dokumente iba ako linky. 
 
 
 
