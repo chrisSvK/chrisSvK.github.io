@@ -1,0 +1,120 @@
+{
+  "tutorialy": [
+    {
+      "nazov": "Nájdi rozvrh",
+      "kroky": [
+        {
+          "cislo": 1,
+          "popis": "Klikni na portál študenta",
+          "xpath": "//*[@id=\"sekce-24\"]/div[3]/div/div[2]/ul/li[1]/a/b",
+          "multipage": 1,
+          "position": "top"
+        },
+        {
+          "cislo": 2,
+          "popis": "Klikni na osobny rozvrh",
+          "xpath": "//*[@id=\"base-right\"]/div/form/table[3]/tbody/tr/td/small/table/tbody/tr[2]/td[1]/small/a",
+          "multipage": 1,
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "nazov": "Zobrazenie bodov z cvičení",
+      "kroky": [
+        {
+          "cislo": 1,
+          "popis": "Najdi rozvrh",
+          "xpath": "//*[@id=\"sekce-27\"]/div[3]/div/div[2]/ul/li[1]/a/b",
+          "multipage": 0,
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "nazov": "Testovaci tutorial",
+      "kroky": [
+        {
+          "cislo": 1,
+          "popis": "Rozvrh studenta",
+          "xpath": "/HTML/BODY/DIV[2]/DIV/DIV/DIV[4]/DIV[2]/DIV/DIV[2]/DIV[3]/DIV/DIV[2]/UL/LI/A/B",
+          "multipage": 0,
+          "position": "left"
+        },
+        {
+          "cislo": 2,
+          "popis": "Testy a skusania",
+          "xpath": "/HTML/BODY/DIV[2]/DIV/DIV/DIV[4]/DIV[2]/DIV/DIV[3]/DIV[3]/DIV/DIV[2]/UL/LI/A/B",
+          "multipage": 0,
+          "position": "right"
+        },
+        {
+          "cislo": 3,
+          "popis": "Disketa",
+          "xpath": "/HTML/BODY/DIV[2]/DIV/DIV/DIV[4]/DIV[2]/DIV/DIV[8]/DIV[3]/DIV/DIV/IMG",
+          "multipage": 0,
+          "position": "bottom"
+        }
+      ]
+    },
+    {
+      "nazov": "Pridaj e-mail",
+      "kroky": [
+        {
+          "cislo": 1,
+          "multipage": 1,
+          "popis": "Klikni na používateľské nastavenia",
+          "xpath": "/HTML/BODY/DIV[2]/DIV/DIV/DIV[4]/DIV[2]/DIV/DIV[11]/DIV[3]/DIV/DIV[2]/UL/LI/A/B",
+          "position": "top"
+        },
+        {
+          "cislo": 2,
+          "multipage": 1,
+          "popis": "Klikni na Moje osobné údaje",
+          "xpath": "/HTML/BODY/DIV[2]/DIV/DIV/TABLE[2]/TBODY/TR/TD[3]/SMALL/A",
+          "position": "top"
+        },
+        {
+          "cislo": 3,
+          "multipage": 0,
+          "popis": "Vypln e-mail",
+          "xpath": "/HTML/BODY/DIV[2]/DIV/DIV/FORM/TABLE/TBODY/TR[38]/TD[2]/SMALL/TABLE/TBODY/TR/TD/SMALL/INPUT",
+          "position": "top"
+        },
+        {
+          "cislo": 4,
+          "multipage": 1,
+          "popis": "Ulož zmeny",
+          "xpath": "/HTML/BODY/DIV[2]/DIV/DIV/FORM/P/INPUT[4]",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "nazov": "Potvrdenie o štúdiu",
+      "kroky": [
+        {
+          "cislo": 1,
+          "multipage": 1,
+          "popis": "Klikni na portál študenta",
+          "xpath": "/HTML/BODY/DIV[2]/DIV/DIV/DIV[4]/DIV[2]/DIV/DIV[2]/DIV[3]/DIV/DIV[2]/UL/LI/A/B",
+          "position": "top"
+        },
+        {
+          "cislo": 2,
+          "multipage": 1,
+          "popis": "Klikni na potvrdenie o štúdiu",
+          "xpath": "/HTML/BODY/DIV[2]/DIV/DIV/FORM/TABLE[3]/TBODY/TR/TD/SMALL/TABLE/TBODY/TR/TD[8]/SMALL/A/IMG",
+          "position": "right"
+        },
+        {
+          "cislo": 3,
+          "multipage": 1,
+          "popis": "Kliknutím sa stiahne potvrdenie",
+          "xpath": "/HTML/BODY/DIV[2]/DIV/DIV/FORM/P[3]/INPUT",
+          "position": "right"
+        }
+      ]
+    }
+  ]
+}
