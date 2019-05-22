@@ -13,7 +13,7 @@
         {
           "cislo": 2,
           "popis": "Klikni na dohľad nad zdravotnou starostlivosťou",
-          "xpath": "/html/body/form/div[5]/div[1]/div/div[1]/div[1]/div[12]/ul/li[7]/a[1]a",
+          "xpath": "/html/body/form/div[5]/div[1]/div/div[1]/div[1]/div[12]/ul/li[7]/a[1]",
           "multipage": 0,
           "position": "top"
         },
