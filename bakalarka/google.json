@@ -1,0 +1,30 @@
+{
+  "tutorialy": [
+    {
+      "nazov": "Ako pouzivat google",
+      "kroky": [
+        {
+          "cislo": 1,
+          "popis": "Zadaj niečo do vyhľadávania",
+          "xpath": "/html/body/div[1]/div[3]/form/div[2]/div/div[1]",
+          "multipage": 0,
+          "position": "top"
+        },
+        {
+          "cislo": 2,
+          "popis": "Klikni na hľadať",
+          "xpath": "/html/body/div[1]/div[3]/form/div[2]/div/div[3]/center/input[1]",
+          "multipage": 1,
+          "position": "top"
+        },
+        {
+          "cislo": 3,
+          "popis": "Prvy výsledok",
+          "xpath": "/html/body/div[6]/div[3]/div[10]/div[1]/div[2]/div/div[2]/div[2]/div/div/div/div/div/div[1]/div",
+          "multipage": 0,
+          "position": "top"
+        }
+      ]
+    }
+  ]
+}
