@@ -6,35 +6,35 @@
         {
           "cislo": 1,
           "popis": "Klikni na podnikateľ",
-          "xpath": "//*[@id="content"]/div/div[1]/ul[3]/li[2]/a",
+          "xpath": "//*[@id=\"content\"]/div/div[1]/ul[3]/li[2]/a",
           "multipage": 0,
           "position": "top"
         },
         {
           "cislo": 2,
           "popis": "Klikni na podnikanie",
-          "xpath": "//*[@id="content"]/div/div[1]/div[2]/div[1]/ul/li[3]/a",
+          "xpath": "//*[@id=\"content\"]/div/div[1]/div[2]/div[1]/ul/li[3]/a",
           "multipage": 0,
           "position": "top"
         },
         {
           "cislo": 3,
           "popis": "Klikni na tovary",
-          "xpath": "//*[@id="content"]/div/div[1]/div[2]/div[4]/ul/li[3]/a",
+          "xpath": "//*[@id=\"content\"]/div/div[1]/div[2]/div[4]/ul/li[3]/a",
           "multipage": 0,
           "position": "top"
         },
          {
           "cislo": 4,
           "popis": "Klikni na prihlasovanie",
-          "xpath": "//*[@id="content"]/div/div[1]/div[2]/div[4]/ul/li[3]/ul/li[22]/a",
+          "xpath": "//*[@id=\"content\"]/div/div[1]/div[2]/div[4]/ul/li[3]/ul/li[22]/a",
           "multipage": 1,
           "position": "top"
         },
         {
           "cislo": 5,
           "popis": "Vyber poskytovateľa",
-          "xpath": "//*[@id="select2-M4_poskytovatelia-container"]",
+          "xpath": "//*[@id=\"select2-M4_poskytovatelia-container\"]",
           "multipage": 0,
           "position": "top"
         }
