@@ -70,14 +70,14 @@
         {
           "cislo": 2,
           "multipage": 1,
-          "popis": "Klikni na Moje osobné údaje",
+          "popis": "Klikni na moje osobné údaje",
           "xpath": "/HTML/BODY/DIV[2]/DIV/DIV/TABLE[2]/TBODY/TR/TD[3]/SMALL/A",
           "position": "top"
         },
         {
           "cislo": 3,
           "multipage": 0,
-          "popis": "Vypln e-mail",
+          "popis": "Vyplň e-mail",
           "xpath": "/HTML/BODY/DIV[2]/DIV/DIV/FORM/TABLE/TBODY/TR[38]/TD[2]/SMALL/TABLE/TBODY/TR/TD/SMALL/INPUT",
           "position": "top"
         },
