@@ -69,12 +69,6 @@ header #logo img {
     display: block;
 }
 
-header #logo #logo-img {
-    position: absolute;
-    top: 15%;
-    left: 45%
-}
-
 main {
     background-color: white;
     overflow: hidden;
