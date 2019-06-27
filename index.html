@@ -2,12 +2,48 @@
 layout: home
 title: Home
 ---
-<h1>Vitajte na mojej stránke</h1>
-<p>Táto stránka vznikla ako projekt pre predmet Webové publikovanie. Cieľom bolo vytvorenie vlastnej webovej stránky s
-    využitím GithubPages a Jekyll. Nachádzajú sa tu informácie o mne, o niektorých projektoch-zadaniach, ktoré som
-    riešil.
-    Taktiež tu uverejňujem niektoré filmy, seriály a knihy o ktorých si myslím že stojí za to vyskúšať. Poslednou
-    podstránkou, ktorú tu nájdete, je "dokumentácia" k tvorbe tejto stránky a ostatných zadaniach pre predmet Webove
-    publikovanie. Časom možno pridám viac informácií/kategórií ak na to nezabudnem a bude ma baviť túto stránku
-    zlepšovať/aktualizovať. </p>
+{% capture year %}{{ site.time | date:"%Y" }}{% endcapture %}
+{% assign age = year | minus:1995 %}
+
+<div class="section profile-content">
+    <div class="container">
+        <div class="owner">
+            <div class="avatar">
+                <img src="../assets/img/faces/profilovka.jpg" alt="Circle Image"
+                     class="img-circle img-no-padding img-responsive">
+            </div>
+            <div class="name">
+                <h4 class="title">Christian Ščípa
+                    <br/>
+                </h4>
+                <h6 class="description">IT STUDENT</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 ml-auto mr-auto text-center">
+
+                <p><!--Táto stránka vznikla ako projekt pre predmet Webové publikovanie. Cieľom bolo vytvorenie vlastnej
+                    webovej stránky s
+                    využitím GithubPages a Jekyll. Nachádzajú sa tu informácie o mne, o niektorých projektoch-zadaniach,
+                    ktoré som
+                    riešil.
+                    Taktiež tu uverejňujem niektoré filmy, seriály a knihy o ktorých si myslím že stojí za to vyskúšať.
+                    Poslednou
+                    podstránkou, ktorú tu nájdete, je "dokumentácia" k tvorbe tejto stránky a ostatných zadaniach pre
+                    predmet Webove
+                    publikovanie. Časom možno pridám viac informácií/kategórií ak na to nezabudnem a bude ma baviť túto
+                    stránku
+                    zlepšovať/aktualizovať.-->
+                    Volám sa Christian, mám {{age}} rokov a som študent vysokej školy II. stupňa na Fakulte Informatiky
+                    a Informačných
+                    Technológií v Bratislave. Táto stránka slúži ako osobný profil a zároveň ako portfólio na moje
+                    projekty na ktorých
+                    som pracoval alebo pracujem. Takisto sa tu nachádzajú informácie o mojich záľubách - prevažne o
+                    filmoch, seriálch, knihách a hudbe
+                </p>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>
 

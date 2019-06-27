@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/assets/css/paper-kit.css">
     {% include analytics.html %}
 </head>
-<body>
+<body class="profile-page sidebar-collapse">
 <nav class="navbar sticky-top navbar-expand-lg  bg-success">
     <div class="container">
         <a class="navbar-brand" href="/index.html" target="_self">CH</a>
@@ -30,8 +30,8 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/index.html" target="_self">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about/index.html" target="_self">O mne</a></li>
+               <!-- <li class="nav-item">
+                    <a class="nav-link" href="/about/index.html" target="_self">O mne</a></li>-->
                 <li class="nav-item">
                     <a class="nav-link " href="/portfolio/index.html" target="_self">Developerský profil </a></li>
                 <li class="nav-item">
@@ -59,7 +59,7 @@
 {{ content }}
 <footer>
     <div id="footerStred">
-        <p style="color: white; font-weight: bold; margin-bottom: 0">© {{site.time |date: "%Y"}}</p>
+        <p style="color: white; font-weight: bold; margin-bottom: 0">Copyright © {{site.time |date: "%Y"}} Christian Ščípa</p>
         <a href="/sitemap.xml" style="font-size:small">Sitemap</a>
         <ul>
             <li><a href="https://www.github.com/chrisSvK"><img alt="github" src="/img/github.png" height="35"></a></li>
