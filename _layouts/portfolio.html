@@ -7,9 +7,10 @@ layout: default
         {% for portfolio in site.portfolio_collection %}
         <div id="porfolio-content">
             <h3>{{ portfolio.headline }}</h3>
+            <br>
             <p>{{portfolio.content | markdownify}}</p>
             {% for screenshot in portfolio.pictures %}
-            <img src={{screenshot}} alt="image" height="200">
+            <img src={{screenshot}} alt="image" height="500" width="400" class="img-thumbnail">
             {% endfor %}
             <hr>
         </div>

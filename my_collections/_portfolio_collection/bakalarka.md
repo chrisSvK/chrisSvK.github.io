@@ -1,5 +1,5 @@
 ---
-headline: Bakalársky projekt - Podpora navigácie na webe
+headline: Bakalársky projekt - Podpora navigácie na webe - JavaScript
 pictures:
   - /img/portfolio/bakalarka.jpg
   - /img/portfolio/bakalarka2.jpg

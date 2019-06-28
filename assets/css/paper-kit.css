@@ -3094,6 +3094,7 @@ h3,
   font-size: 1.825em;
   line-height: 1.4;
   margin: 20px 0 0px;
+  font-weight: 400;
 }
 
 h4,
@@ -3120,6 +3121,7 @@ p {
   font-size: 15px;
   line-height: 1.5em;
   margin-bottom: 5px;
+  font-weight : 400;
 }
 
 h1 small,
@@ -3291,17 +3293,18 @@ blockquote small {
 body {
   color: #66615b;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
 }
 
 a {
-  color: #51bcda;
+  color: #40b07f;
+  font-weight: 400;
 }
 
 a:hover,
 a:focus {
-  color: #2ba9cd;
+  color: #266347;
   text-decoration: none;
 }
 
@@ -6900,9 +6903,10 @@ License - nucleoapp.com/license/
 }
 
 .section {
-  padding: 70px 0;
+  padding:  0;
   position: relative;
   background-color: #FFFFFF;
+  z-index : 1;
 }
 
 .section-with-space {

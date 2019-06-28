@@ -5,6 +5,7 @@ layout: default
     <div id="content">
         {{ content }}
         <h1>Filmy</h1>
+        <br>
         {{page.filmyContent}}
         <br>
         <div class="aktualnyFilm">
@@ -36,7 +37,7 @@ layout: default
         <h1>Seriály</h1>
         <br>
         <div class="aktualnyFilm">
-            <h2>Aktuálny serial</h2>
+            <h2>Aktuálny seriál</h2>
             <h3><a href={{page.new-show.first.link}} target="_blank">{{page.new-show.first.nazov}}</a></h3>
             <img class="poster" src={{page.new-show.first.img}} alt="show" height="300" width="230">
             <div class="popis">{{page.new-show.first.popis}}</div>
