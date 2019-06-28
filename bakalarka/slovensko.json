@@ -1,0 +1,37 @@
+{
+  "tutorialy": [
+    {
+      "nazov": "Sťažnosť na dohľad nad zdravotnou starostlivosťou",
+      "kroky": [
+        {
+          "cislo": 1,
+          "popis": "Klikni na zdravie",
+          "xpath": "/html/body/form/div[5]/div[1]/div/div[1]/div[1]/div[1]/ul/li[11]/a",
+          "multipage": 0,
+          "position": "top"
+        },
+        {
+          "cislo": 2,
+          "popis": "Klikni na dohľad nad zdravotnou starostlivosťou",
+          "xpath": "/html/body/form/div[5]/div[1]/div/div[1]/div[1]/div[12]/ul/li[7]/a[1]",
+          "multipage": 0,
+          "position": "top"
+        },
+        {
+          "cislo": 3,
+          "popis": "Klikni na podávanie sťažností",
+          "xpath": "/html/body/form/div[5]/div[1]/div/div[1]/div[1]/div[12]/ul/li[7]/ul/li[3]/a",
+          "multipage": 1,
+          "position": "top"
+        },
+         {
+          "cislo": 4,
+          "popis": "Klikni na prejsť na službu",
+          "xpath": "//*[@id=\"M4_resultRepeater_ctl01_serviceLink\"]",
+          "multipage": 1,
+          "position": "top"
+        }
+      ]
+    }
+  ]
+}
