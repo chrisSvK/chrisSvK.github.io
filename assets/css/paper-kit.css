@@ -3295,6 +3295,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+  padding-bottom: 200px;
 }
 
 a {
@@ -6907,6 +6908,7 @@ License - nucleoapp.com/license/
   position: relative;
   background-color: #FFFFFF;
   z-index : 1;
+  margin-bottom: 50px;
 }
 
 .section-with-space {
