@@ -168,12 +168,15 @@ footer {
     height: max-content;
     bottom: 0;
     position: absolute;
+    overflow: hidden;
 }
 
 footer #footerStred {
     width: max-content;
     margin: 0 auto;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
