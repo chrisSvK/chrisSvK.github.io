@@ -17,119 +17,125 @@
     <link rel="stylesheet" href="/assets/css/paper-kit.css">
     {% include analytics.html %}
 </head>
-<body class="profile-page sidebar-collapse">
-<nav class="navbar sticky-top navbar-expand-lg  bg-success">
-    <div class="container">
-        <a class="navbar-brand" href="/index.html" target="_self">CH</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#example-navbar"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-bar bar1"></span>
-            <span class="navbar-toggler-bar bar2"></span>
-            <span class="navbar-toggler-bar bar3"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/index.html" target="_self">Domov <span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="/portfolio/index.html" target="_self">Projekty </a></li>
-                <li class="nav-item">
-                    <a class="nav-link " href="/zrucnosti/index.html" target="_self">Zručnosti </a></li>
-                <li class="nav-item">
-                    <a class="nav-link " href="/movies/index.html" target="_self">Filmy-seriály </a></li>
-                <li class="nav-item">
-                    <a class="nav-link " href="/music/index.html" target="_self">Hudba-knihy </a></li>
-            </ul>
-            <form class="form-inline ml-auto">
-                <div class="form-group has-white">
-                </div>
-            </form>
+<body style="padding-bottom: 0" class="profile-page sidebar-collapse">
+<img height="200px" style="position: absolute; z-index: 999; margin: auto; top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;" alt="logo" src="/img/logo.png"/>
+<div style="filter:blur(20px); pointer-events: none;">
+    <nav class="navbar sticky-top navbar-expand-lg  bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html" target="_self">CH</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#example-navbar"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html" target="_self">Domov <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/portfolio/index.html" target="_self">Projekty </a></li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/zrucnosti/index.html" target="_self">Zručnosti </a></li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/movies/index.html" target="_self">Filmy-seriály </a></li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/music/index.html" target="_self">Hudba-knihy </a></li>
+                </ul>
+                <form class="form-inline ml-auto">
+                    <div class="form-group has-white">
+                    </div>
+                </form>
+            </div>
+            <!-- <ul>
+                 <li><a class="navbar-brand" href="/index.html" target="_self">Home /</a></li>
+                 <li><a  class="navbar-brand" href="/about/index.html" target="_self">O mne /</a></li>
+                 <li><a class="navbar-brand" href="/portfolio/index.html" target="_self">Developerský profil /</a></li>
+                 <li><a class="navbar-brand" href="/movies/index.html" target="_self">Filmy-seriály /</a></li>
+                 <li><a class="navbar-brand" href="/music/index.html" target="_self">Hudba-knihy /</a></li>
+                 <li><a class="navbar-brand" href="/wpub/" target="_self">Webove publikovanie</a></li>
+             </ul>-->
         </div>
-        <!-- <ul>
-             <li><a class="navbar-brand" href="/index.html" target="_self">Home /</a></li>
-             <li><a  class="navbar-brand" href="/about/index.html" target="_self">O mne /</a></li>
-             <li><a class="navbar-brand" href="/portfolio/index.html" target="_self">Developerský profil /</a></li>
-             <li><a class="navbar-brand" href="/movies/index.html" target="_self">Filmy-seriály /</a></li>
-             <li><a class="navbar-brand" href="/music/index.html" target="_self">Hudba-knihy /</a></li>
-             <li><a class="navbar-brand" href="/wpub/" target="_self">Webove publikovanie</a></li>
-         </ul>-->
-    </div>
-</nav>
-{{ content }}
-<footer>
-    <div id="footerStred">
-        <p style="color: white; font-weight: bold; margin-bottom: 0">Copyright © {{site.time |date: "%Y"}} Christian
-            Ščípa</p>
-        <a href="/sitemap.xml" style="font-size:small">Sitemap</a>
-        <br>
-        <ul>
-            <li><a href="https://www.github.com/chrisSvK">
-                <img alt="github" src="/img/github.png"
-                     onmouseover="this.src='/img/github02.png'"
-                     onmouseout="this.src='/img/github.png'"
-                     height="35"
-                >
-            </a>
-            </li>
-            <li><a href="mailto:christian.scipa@gmail.com">
-                <img alt="gmail" src="/img/gmail.png"
-                     onmouseover="this.src='/img/gmail02.png'"
-                     onmouseout="this.src='/img/gmail.png'" height="35">
-            </a>
-            </li>
-            <li><a href="https://www.linkedin.com/in/christian-ščípa-38888a113">
-                <img alt="linkedin" src="/img/linkedin.png"
-                     onmouseover="this.src='/img/linkedin02.png'"
-                     onmouseout="this.src='/img/linkedin.png'"
-                     height="35">
-            </a>
-            </li>
-            <li><a href="https://www.instagram.com/chris_svk/">
-                <img alt="instagram" src="/img/insta.png"
-                     onmouseover="this.src='/img/insta02.png'"
-                     onmouseout="this.src='/img/insta.png'"
-                     height="35">
-            </a>
-            </li>
-            <li><a href="https://www.youtube.com/user/christianscipa06/">
-                <img alt="youtube" src="/img/youtube.png"
-                     onmouseover="this.src='/img/youtube02.png'"
-                     onmouseout="this.src='/img/youtube.png'"
-                     height="35">
-            </a>
-            </li>
-            <li><a href="https://twitter.com/ChristianScipa">
-                <img alt="twitter" src="/img/twitter.png"
-                     onmouseover="this.src='/img/twitter02.png'"
-                     onmouseout="this.src='/img/twitter.png'"
-                     height="35">
-            </a>
-            </li>
-        </ul>
-    </div>
-</footer>
+    </nav>
+    {{ content }}
+    <footer style="z-index: 9999; bottom: auto">
+        <div id="footerStred">
+            <p style="color: white; font-weight: bold; margin-bottom: 0">Copyright © {{site.time |date: "%Y"}} Christian
+                Ščípa</p>
+            <a href="/sitemap.xml" style="font-size:small">Sitemap</a>
+            <br>
+            <ul>
+                <li><a href="https://www.github.com/chrisSvK">
+                    <img alt="github" src="/img/github.png"
+                         onmouseover="this.src='/img/github02.png'"
+                         onmouseout="this.src='/img/github.png'"
+                         height="35"
+                    >
+                </a>
+                </li>
+                <li><a href="mailto:christian.scipa@gmail.com">
+                    <img alt="gmail" src="/img/gmail.png"
+                         onmouseover="this.src='/img/gmail02.png'"
+                         onmouseout="this.src='/img/gmail.png'" height="35">
+                </a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/christian-ščípa-38888a113">
+                    <img alt="linkedin" src="/img/linkedin.png"
+                         onmouseover="this.src='/img/linkedin02.png'"
+                         onmouseout="this.src='/img/linkedin.png'"
+                         height="35">
+                </a>
+                </li>
+                <li><a href="https://www.instagram.com/chris_svk/">
+                    <img alt="instagram" src="/img/insta.png"
+                         onmouseover="this.src='/img/insta02.png'"
+                         onmouseout="this.src='/img/insta.png'"
+                         height="35">
+                </a>
+                </li>
+                <li><a href="https://www.youtube.com/user/christianscipa06/">
+                    <img alt="youtube" src="/img/youtube.png"
+                         onmouseover="this.src='/img/youtube02.png'"
+                         onmouseout="this.src='/img/youtube.png'"
+                         height="35">
+                </a>
+                </li>
+                <li><a href="https://twitter.com/ChristianScipa">
+                    <img alt="twitter" src="/img/twitter.png"
+                         onmouseover="this.src='/img/twitter02.png'"
+                         onmouseout="this.src='/img/twitter.png'"
+                         height="35">
+                </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
 </body>
 
-<!--   Core JS Files   -->
-<script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
-<script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--&lt;!&ndash;   Core JS Files   &ndash;&gt;-->
+<!--<script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>-->
+<!--<script src="/assets/js/core/popper.min.js" type="text/javascript"></script>-->
+<!--<script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>-->
 
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="/assets/js/plugins/bootstrap-switch.js"></script>
+<!--&lt;!&ndash;  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ &ndash;&gt;-->
+<!--<script src="/assets/js/plugins/bootstrap-switch.js"></script>-->
 
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--&lt;!&ndash;  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ &ndash;&gt;-->
+<!--<script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>-->
 
-<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-<script src="/assets/js/plugins/moment.min.js"></script>
-<script src="/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+<!--&lt;!&ndash;  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker &ndash;&gt;-->
+<!--<script src="/assets/js/plugins/moment.min.js"></script>-->
+<!--<script src="/assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>-->
 
-<!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!--&lt;!&ndash;  Google Maps Plugin    &ndash;&gt;-->
+<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>-->
 
-<!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
-<script src="/assets/js/paper-kit.min.js" type="text/javascript"></script>
+<!--&lt;!&ndash; Control Center for Paper Kit: parallax effects, scripts for the example pages etc &ndash;&gt;-->
+<!--<script src="/assets/js/paper-kit.min.js" type="text/javascript"></script>-->
 </html>
