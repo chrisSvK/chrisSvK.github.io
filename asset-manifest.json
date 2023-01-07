@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.eaa94331.css",
-    "main.js": "/static/js/main.d877481c.js",
+    "main.css": "/static/css/main.c5acf168.css",
+    "main.js": "/static/js/main.c3487e44.js",
     "static/media/bakalarka3.jpg": "/static/media/bakalarka3.1d7c3363d0018440581a.jpg",
     "static/media/panorama.jpg": "/static/media/panorama.5b0ebc864c4efaabba9d.jpg",
     "static/media/bakalarka.jpg": "/static/media/bakalarka.9dc8aa7e77ea13fd74ae.jpg",
@@ -26,12 +26,10 @@
     "static/media/python01.png": "/static/media/python01.a9b6e4b4de903ebfe553.png",
     "static/media/css01.png": "/static/media/css01.6402b604475346c0ff73.png",
     "static/media/js01.png": "/static/media/js01.266bd9fb2663dcc057b4.png",
-    "index.html": "/index.html",
-    "main.eaa94331.css.map": "/static/css/main.eaa94331.css.map",
-    "main.d877481c.js.map": "/static/js/main.d877481c.js.map"
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.eaa94331.css",
-    "static/js/main.d877481c.js"
+    "static/css/main.c5acf168.css",
+    "static/js/main.c3487e44.js"
   ]
 }
