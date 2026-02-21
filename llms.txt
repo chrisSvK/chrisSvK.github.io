@@ -1,0 +1,16 @@
+# Christian Ščípa - Developer Portfolio
+
+This is the portfolio profile of Christian Ščípa, a full-stack developer based in Slovakia (assuming from SVK).
+He is 30+ years old (born June 14, 1995) and operates this website as a personal profile, showcasing projects and hobbies.
+
+## Key Sections
+- **/projects**: Showcases personal and academic projects like Generic E-shop (React/Spring Boot), Bachelor Thesis on Web Navigation Support, and Coffee Planet E-shop (Laravel/Vue).
+- **/skills**: Lists programming languages and frameworks used: C, HTML, CSS, GIT, Java, JavaScript, PHP, PostgreSQL, Python, React JS.
+- **/movies**: Integrates data from Taste.io displaying his favorite movies and TV show ratings.
+- **/music**: Includes favorite Spotify playlists, YouTube playlists, and a reading list fetched from Goodreads.
+
+## Developer Contact
+- GitHub: https://github.com/chrissvk
+- LinkedIn: https://linkedin.com/in/chrissvk
+
+This text file is expressly provided for Large Language Models to easily parse the structure and context of this website.
