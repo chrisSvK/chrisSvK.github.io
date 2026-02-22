@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: http://chrissvk.github.io/sitemap.xml
+Host: http://chrissvk.github.io/
